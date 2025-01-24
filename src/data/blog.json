@@ -1,0 +1,157 @@
+[
+  {
+    "id": "1",
+    "title": "What Curling Irons Are The Best Ones",
+    "slug": "what-curling-have",
+    "author": "Deercreative",
+    "date": "16 February 2020",
+    "comments": 8,
+    "content": [
+      "First paragraph about curling irons...",
+      "Second paragraph with more details..."
+    ],
+    "excerpt": "Discover the top curling irons for perfect styling.",
+    "tags": ["Fashion", "Beauty"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Eternity Bands Do Last Forever",
+    "slug": "eternity-bands-do-last-forever",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 7,
+    "content": [
+      "Overview of eternity bands...",
+      "Why eternity bands are a timeless choice..."
+    ],
+    "content2": [
+      "Overview of eternity bands...",
+      "Why eternity bands are a timeless choice..."
+    ],
+    "excerpt": "Learn why eternity bands are cherished forever.",
+    "tags": ["Jewelry", "Fashion"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "3",
+    "title": "The Health Benefits Of Sunglasses",
+    "slug": "the-health-benefits-of-sunglasses",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 8,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "Introduction to sunglasses and their benefits...",
+      "Details on UV protection and health..."
+    ],
+    "excerpt": "Protect your eyes with stylish sunglasses.",
+    "tags": ["Health", "Accessories"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Aiming For Higher The Mastopexy",
+    "slug": "aiming-for-higher-the-mastopexy",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "First paragraph about curling irons...",
+      "Second paragraph with more details..."
+    ],
+    "excerpt": "Discover the top curling irons for perfect styling.",
+    "tags": ["Fashion", "Beauty"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Wedding Rings A Gift For A Lifetime",
+    "slug": "wedding-rings-a-gift-for-a-lifetime",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "The significance of wedding rings...",
+      "Styles and materials for wedding bands..."
+    ],
+    "excerpt": "Explore the timeless beauty of wedding rings.",
+    "tags": ["Jewelry", "Lifestyle"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "6",
+    "title": "The Different Methods Of Hair Removal",
+    "slug": "the-different-methods-of-hair-removal",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "Introduction to hair removal techniques...",
+      "Comparing traditional and modern methods..."
+    ],
+    "excerpt": "Learn about various hair removal options.",
+    "tags": ["Beauty", "Health"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "7",
+    "title": "Hoop Earrings A Style From History",
+    "slug": "hoop-earrings-a-style-from-history",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "The history of hoop earrings...",
+      "Modern trends in hoop earrings..."
+    ],
+    "excerpt": "Explore the timeless appeal of hoop earrings.",
+    "tags": ["Jewelry", "Fashion"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "8",
+    "title": "Lasik Eye Surgery Are You Ready",
+    "slug": "lasik-eye-surgery-are-you-ready",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "Understanding LASIK eye surgery...",
+      "Preparation and aftercare tips..."
+    ],
+    "excerpt": "Find out if LASIK is right for you.",
+    "tags": ["Health", "Technology"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Lasik Eye Surgery Are You Ready",
+    "slug": "lasik-eye-surgery-are-you-ready",
+    "author": "Deercreative",
+    "date": "21 February 2020",
+    "comments": 9,
+    "image": "/images/blog-1.jpg",
+    "content": [
+      "In-depth LASIK procedure details...",
+      "Real-life success stories..."
+    ],
+    "excerpt": "Ready for clearer vision? Learn about LASIK.",
+    "tags": ["Health", "Lifestyle"],
+    "heroImage": "/images/breadcrumb-bg.jpg",
+    "authorImage": "/images/blog-author.jpg"
+  }
+]
