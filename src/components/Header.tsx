@@ -2,7 +2,7 @@
 import React, { use, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Menu, ShoppingCart, Heart, Search } from 'lucide-react';
 import { RootState } from '@/store/store';
 import logo from "@/img/logo.png";

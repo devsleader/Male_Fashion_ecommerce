@@ -3,17 +3,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
-import Calendarlogo  from '@/img/icon/calendar.png';
+import { BlogPost } from '@/types/types';
+import Calendarlogo from '@/img/icon/calendar.png';
 
 const BlogMainSection: React.FC = () => {
-  const blogs = useSelector((state: RootState) => state.blog.blogs);
+  const blogs = useSelector((state: RootState) => state.blogs.blogs);
 
   return (
     <section className="py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {blogs.map((blog) => (
-            <div key={blog.id} className="relatve">
+          {blogs.map((blog: BlogPost) => (
+            <div key={blog.id} className="relative">
               <div className="relative h-64 -z-10">
                 {blog.image ? (
                   <Image 
@@ -28,7 +29,7 @@ const BlogMainSection: React.FC = () => {
                   </div>
                 )}
               </div>
-              <div className=" px-6 p-10 bg-white  w-[80%] mx-auto mt-[-35px]">
+              <div className="px-6 p-10 bg-white w-[80%] mx-auto mt-[-35px]">
                 <div className="flex items-center text-gray-500 text-sm mb-2">
                   <Image 
                     src={Calendarlogo}

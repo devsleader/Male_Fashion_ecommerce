@@ -30,8 +30,8 @@ const initialState: BlogState = {
   error: null
 };
 
-const blogSlice = createSlice({
-  name: 'blog',
+const blogsSlice = createSlice({
+  name: 'blogs',
   initialState,
   reducers: {
     setCurrentBlog: (state, action: PayloadAction<string>) => {
@@ -46,5 +46,5 @@ const blogSlice = createSlice({
   }
 });
 
-export const { setCurrentBlog, setLoading, setError } = blogSlice.actions;
-export default blogSlice.reducer;
+export const { setCurrentBlog, setLoading, setError } = blogsSlice.actions;
+export default blogsSlice.reducer;

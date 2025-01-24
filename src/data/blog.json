@@ -10,6 +10,12 @@
       "First paragraph about curling irons...",
       "Second paragraph with more details..."
     ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
     "excerpt": "Discover the top curling irons for perfect styling.",
     "tags": ["Fashion", "Beauty"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -30,6 +36,8 @@
       "Overview of eternity bands...",
       "Why eternity bands are a timeless choice..."
     ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Learn why eternity bands are cherished forever.",
     "tags": ["Jewelry", "Fashion"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -47,6 +55,12 @@
       "Introduction to sunglasses and their benefits...",
       "Details on UV protection and health..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Protect your eyes with stylish sunglasses.",
     "tags": ["Health", "Accessories"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -64,6 +78,12 @@
       "First paragraph about curling irons...",
       "Second paragraph with more details..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Discover the top curling irons for perfect styling.",
     "tags": ["Fashion", "Beauty"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -81,6 +101,12 @@
       "The significance of wedding rings...",
       "Styles and materials for wedding bands..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Explore the timeless beauty of wedding rings.",
     "tags": ["Jewelry", "Lifestyle"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -98,6 +124,12 @@
       "Introduction to hair removal techniques...",
       "Comparing traditional and modern methods..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Learn about various hair removal options.",
     "tags": ["Beauty", "Health"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -115,6 +147,12 @@
       "The history of hoop earrings...",
       "Modern trends in hoop earrings..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Explore the timeless appeal of hoop earrings.",
     "tags": ["Jewelry", "Fashion"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -132,6 +170,12 @@
       "Understanding LASIK eye surgery...",
       "Preparation and aftercare tips..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Find out if LASIK is right for you.",
     "tags": ["Health", "Technology"],
     "heroImage": "/images/breadcrumb-bg.jpg",
@@ -139,8 +183,8 @@
   },
   {
     "id": "9",
-    "title": "Lasik Eye Surgery Are You Ready",
-    "slug": "lasik-eye-surgery-are-you-ready",
+    "title": "Are You Ready for the last game",
+    "slug": "are-you-read",
     "author": "Deercreative",
     "date": "21 February 2020",
     "comments": 9,
@@ -149,6 +193,12 @@
       "In-depth LASIK procedure details...",
       "Real-life success stories..."
     ],
+    "content2": [
+      "3rd paragraph about curling irons...",
+      "4th paragraph with more details..."
+    ],
+    "quote" : "Write the Quote there",
+    "quoteBY" : "Adam Millers",
     "excerpt": "Ready for clearer vision? Learn about LASIK.",
     "tags": ["Health", "Lifestyle"],
     "heroImage": "/images/breadcrumb-bg.jpg",

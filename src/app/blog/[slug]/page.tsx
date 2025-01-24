@@ -14,10 +14,10 @@ interface BlogDetailProps {
 const BlogDetailall: React.FC<BlogDetailProps> = ({ params }) => {
   const { slug } = React.use(params); // Unwrap params using React.use()
 
-  const loading = useSelector((state: RootState) => state.blog.loading);
-  const error = useSelector((state: RootState) => state.blog.error);
+  const loading = useSelector((state: RootState) => state.blogs.loading);
+  const error = useSelector((state: RootState) => state.blogs.error);
   const dispatch: AppDispatch = useDispatch();
-  const currentBlog = useSelector((state: RootState) => state.blog.currentBlog);
+  const currentBlog = useSelector((state: RootState) => state.blogs.currentBlog);
   // Extract blog id from route params
   const blogId = slug ? Number(slug) : null;
 

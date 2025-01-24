@@ -1,8 +1,5 @@
 
-
-// components/Counter.tsx
 'use client'
-import { count } from 'console';
 import { useState, useEffect } from 'react';
 
 interface CounterItemProps {
