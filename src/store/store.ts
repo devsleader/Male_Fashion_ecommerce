@@ -6,6 +6,7 @@ import contactReducer from '@/store/contactSlice';
 import testimonialReducer from '@/store/testimonialSlice';
 import blogsReducer from '@/store/blogsSlice';
 import commentReducer from './commentSlice'; 
+import productReducer from './productSlice';
 
 const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ const store = configureStore({
     testimonial: testimonialReducer,
     blogs: blogsReducer,
     comments: commentReducer,
+    products: productReducer,
   },
   middleware: (getDefaultMiddleware) => 
     getDefaultMiddleware().concat(/* other middlewares if any */),

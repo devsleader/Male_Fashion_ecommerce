@@ -5,7 +5,6 @@ import TeamImage2 from '@/img/about/team-2.jpg'
 import TeamImage3 from '@/img/about/team-3.jpg'
 import TeamImage4 from '@/img/about/team-4.jpg'
 
-// components/Team.tsx
 interface TeamMember {
     name: string;
     role: string;

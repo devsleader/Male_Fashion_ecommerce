@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": "Piqué Biker Jacket",
+    "price": 67.24,
+    "category": "Men",
+    "brand": "Louis Vuitton",
+    "color": "black",
+    "size": "m",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Multi-pocket Chest Bag",
+    "price": 43.48,
+    "category": "Bags",
+    "brand": "Chanel",
+    "color": "grey",
+    "size": "xl",
+    "rating": 3.8
+  },
+  {
+    "id": 3,
+    "name": "Slim Fit T-shirt",
+    "price": 25.99,
+    "category": "Men",
+    "brand": "Zara",
+    "color": "white",
+    "size": "l",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "name": "Floral Print Dress",
+    "price": 59.99,
+    "category": "Women",
+    "brand": "H&M",
+    "color": "pink",
+    "size": "s",
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "name": "Leather Backpack",
+    "price": 89.99,
+    "category": "Bags",
+    "brand": "Coach",
+    "color": "brown",
+    "size": "one-size",
+    "rating": 4.3
+  },
+  {
+    "id": 6,
+    "name": "Oversized Hoodie",
+    "price": 39.99,
+    "category": "Men",
+    "brand": "Adidas",
+    "color": "grey",
+    "size": "xl",
+    "rating": 4.1
+  },
+  {
+    "id": 7,
+    "name": "Pleated Mini Skirt",
+    "price": 49.99,
+    "category": "Women",
+    "brand": "Mango",
+    "color": "black",
+    "size": "m",
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "name": "Aviator Sunglasses",
+    "price": 29.99,
+    "category": "Accessories",
+    "brand": "Ray-Ban",
+    "color": "gold",
+    "size": "one-size",
+    "rating": 4.4
+  },
+  {
+    "id": 9,
+    "name": "Linen Button-Down Shirt",
+    "price": 55.99,
+    "category": "Men",
+    "brand": "J.Crew",
+    "color": "white",
+    "size": "m",
+    "rating": 4.3
+  },
+  {
+    "id": 10,
+    "name": "Crossbody Messenger Bag",
+    "price": 69.99,
+    "category": "Bags",
+    "brand": "Fossil",
+    "color": "navy",
+    "size": "one-size",
+    "rating": 4.5
+  },
+  {
+    "id": 11,
+    "name": "Sleeveless Jumpsuit",
+    "price": 79.99,
+    "category": "Women",
+    "brand": "Maje",
+    "color": "olive",
+    "size": "l",
+    "rating": 4.2
+  },
+  {
+    "id": 12,
+    "name": "Distressed Denim Jacket",
+    "price": 89.99,
+    "category": "Men",
+    "brand": "Levi's",
+    "color": "blue",
+    "size": "m",
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "name": "Satin Camisole",
+    "price": 39.99,
+    "category": "Women",
+    "brand": "Zara",
+    "color": "black",
+    "size": "s",
+    "rating": 4.3
+  },
+  {
+    "id": 14,
+    "name": "Leather Tote Bag",
+    "price": 99.99,
+    "category": "Bags",
+    "brand": "Kate Spade",
+    "color": "tan",
+    "size": "one-size",
+    "rating": 4.7
+  },
+  {
+    "id": 15,
+    "name": "Striped Polo Shirt",
+    "price": 45.99,
+    "category": "Men",
+    "brand": "Ralph Lauren",
+    "color": "blue",
+    "size": "l",
+    "rating": 4.4
+  },
+  {
+    "id": 16,
+    "name": "Ankle Strap Heels",
+    "price": 69.99,
+    "category": "Women",
+    "brand": "Steve Madden",
+    "color": "black",
+    "size": "7",
+    "rating": 4.5
+  },
+  {
+    "id": 17,
+    "name": "Canvas Tote Bag",
+    "price": 29.99,
+    "category": "Bags",
+    "brand": "Madewell",
+    "color": "natural",
+    "size": "one-size",
+    "rating": 4.2
+  },
+  {
+    "id": 18,
+    "name": "Cropped Wide-Leg Pants",
+    "price": 59.99,
+    "category": "Women",
+    "brand": "Topshop",
+    "color": "khaki",
+    "size": "m",
+    "rating": 4.6
+  },
+  {
+    "id": 19,
+    "name": "Slim-Fit Oxford Shirt",
+    "price": 49.99,
+    "category": "Men",
+    "brand": "Brooks Brothers",
+    "color": "white",
+    "size": "l",
+    "rating": 4.3
+  },
+  {
+    "id": 20,
+    "name": "Leather Belt",
+    "price": 29.99,
+    "category": "Accessories",
+    "brand": "Anson Belt",
+    "color": "brown",
+    "size": "32",
+    "rating": 4.4
+  },
+  {
+    "id": 21,
+    "name": "Cashmere Sweater",
+    "price": 99.99,
+    "category": "Women",
+    "brand": "Everlane",
+    "color": "camel",
+    "size": "s",
+    "rating": 4.7
+  },
+  {
+    "id": 22,
+    "name": "Wide-Leg Trousers",
+    "price": 69.99,
+    "category": "Women",
+    "brand": "Vince",
+    "color": "black",
+    "size": "m",
+    "rating": 4.5
+  },
+  {
+    "id": 23,
+    "name": "Canvas Sneakers",
+    "price": 39.99,
+    "category": "Shoes",
+    "brand": "Converse",
+    "color": "white",
+    "size": "10",
+    "rating": 4.2
+  },
+  {
+    "id": 24,
+    "name": "Denim Midi Skirt",
+    "price": 59.99,
+    "category": "Women",
+    "brand": "Madewell",
+    "color": "blue",
+    "size": "l",
+    "rating": 4.4
+  },
+  {
+    "id": 25,
+    "name": "Leather Trifold Wallet",
+    "price": 49.99,
+    "category": "Accessories",
+    "brand": "Fossil",
+    "color": "black",
+    "size": "one-size",
+    "rating": 4.6
+  },
+  {
+    "id": 26,
+    "name": "Ribbed Cotton Tank",
+    "price": 24.99,
+    "category": "Women",
+    "brand": "H&M",
+    "color": "white",
+    "size": "s",
+    "rating": 4.3
+  },
+  {
+    "id": 27,
+    "name": "Suede Chelsea Boots",
+    "price": 79.99,
+    "category": "Shoes",
+    "brand": "Timberland",
+    "color": "tan",
+    "size": "9",
+    "rating": 4.6
+  }
+]
+  
+  

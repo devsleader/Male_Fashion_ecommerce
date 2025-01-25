@@ -1,4 +1,3 @@
-// components/AboutSection.tsx
 import AboutImg from '@/img/about/about-us.jpg'
 import Image from 'next/image'
 

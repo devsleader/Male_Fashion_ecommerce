@@ -24,3 +24,15 @@ export interface CommentFormData {
   phone: string;
   comment: string;
 }
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  category: string;
+  brand: string;
+  color: string;
+  size: string;
+  rating: number;
+}
+
+    

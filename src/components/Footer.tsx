@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { subscribeToNewsletter } from '@/store/newsletterSlice';
+// import { subscribeToNewsletter } from '@/store/newsletterSlice';
 import Footerlogo from '@/img/footer-logo.png'
 import FooterCards from '@/img/payment.png'
 
