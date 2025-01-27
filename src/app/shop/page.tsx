@@ -1,9 +1,18 @@
 'use client'
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '@/store/store';
-import ShopSidebar from '@/components/ShopSidebar';
+import { addToCart } from '@/store/cartSlice';
+import { addToWishlist } from '@/store/wishlistSlice';
+// import ShopSidebar from '@/components/ShopSidebar';
 import { FaShoppingCart, FaHeart, FaEye } from 'react-icons/fa';
+import Link from 'next/link';
+
+import { setFilters, setSearchTerm } from '@/store/productSlice';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { Product } from '@/types/types';
+
+  
 
 const ShopPage: React.FC = () => {
   const filteredProducts = useSelector((state: RootState) => state.products.filteredProducts);
@@ -33,17 +42,160 @@ const ShopPage: React.FC = () => {
 
   const currentProducts = filteredAndSortedProducts.slice(indexOfFirstItem, indexOfLastItem);
 
-  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredAndSortedProducts.length / itemsPerPage);
+
+
+
+  const dispatch = useDispatch();
+  const [localFilters, setLocalFilters] = useState({
+    category: '',
+    brand: '',
+    size: '',
+    color: '',
+    priceRange: { min: 0, max: 250 }
+  });
+  const [search, setSearch] = useState('');
+  const [expandedFilter, setExpandedFilter] = useState<string | null>('Categories');
+
+  const handleSidebarFilterChange = (filterType: string, value: any) => {
+    const newFilters = { ...localFilters, [filterType]: value };
+    setLocalFilters(newFilters);
+    dispatch(setFilters(newFilters));
+  };
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    dispatch(setSearchTerm(search));
+  };
+
+  const toggleFilterExpansion = (filter: string) => {
+    setExpandedFilter(expandedFilter === filter ? null : filter);
+  };
+  const handleAddToCart = (product: Product, quantity: number) => {
+    dispatch(addToCart({ ...product, quantity }));
+  };
+   // Add a new function to handle adding to wishlist
+   const handleAddToWishlist = (product: Product) => {
+    dispatch(addToWishlist(product));
+  };
 
   return (
     <div className="container mx-auto flex">
       <div className="w-1/4">
-        <ShopSidebar />
+      <div className="shop__sidebar bg-white p-4">
+      {/* Search Form */}
+      <form onSubmit={handleSearchSubmit} className="mb-8">
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full p-2 border rounded"
+        />
+        <button type="submit" className="mt-2 bg-black text-white px-4 py-2 rounded">
+          Search
+        </button>
+      </form>
+
+      {/* Filters */}
+      {['Categories', 'Branding', 'Filter Price', 'Size', 'Colors', 'Tags'].map(filter => (
+        <div key={filter} className="mb-6">
+          <div
+            className="flex justify-between items-center font-bold mb-4 cursor-pointer"
+            onClick={() => toggleFilterExpansion(filter)}
+          >
+            {filter}
+            {expandedFilter === filter ? <FaChevronUp /> : <FaChevronDown />}
+          </div>
+          {expandedFilter === filter && (
+            <div className={filter === 'Colors' ? 'flex flex-wrap' : ''}>
+              {filter === 'Categories' &&
+                ['Men', 'Women', 'Bags', 'Clothing', 'Shoes', 'Accessories', 'Kids'].map(category => (
+                  <button
+                    key={category}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-200 ${
+                      localFilters.category === category ? 'bg-gray-200' : ''
+                    }`}
+                    onClick={() => handleSidebarFilterChange('category', category)}
+                  >
+                    {category} ({20})
+                  </button>
+                ))}
+              {filter === 'Branding' &&
+                ['Louis Vuitton', 'Chanel', 'Hermes', 'Gucci'].map(brand => (
+                  <button
+                    key={brand}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-200 ${
+                      localFilters.brand === brand ? 'bg-gray-200' : ''
+                    }`}
+                    onClick={() => handleSidebarFilterChange('brand', brand)}
+                  >
+                    {brand}
+                  </button>
+                ))}
+              {filter === 'Filter Price' &&
+                ['$0.00 - $50.00', '$50.00 - $100.00', '$100.00 - $150.00', '$150.00 - $200.00', '$200.00 - $250.00', '250.00+'].map(price => {
+                  const [min, max] = price.split(' - ').map(p => parseFloat(p.replace(/[$,]/g, '')));
+                  return (
+                    <button
+                      key={price}
+                      className={`block w-full text-left px-4 py-2 hover:bg-gray-200 ${
+                        localFilters.priceRange.min === min && localFilters.priceRange.max === max ? 'bg-gray-200' : ''
+                      }`}
+                      onClick={() => handleSidebarFilterChange('priceRange', { min, max })}
+                    >
+                      {price}
+                    </button>
+                  );
+                })}
+              {filter === 'Size' &&
+                ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL'].map(size => (
+                  <button
+                    key={size}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-200 ${
+                      localFilters.size === size ? 'bg-gray-200' : ''
+                    }`}
+                    onClick={() => handleSidebarFilterChange('size', size)}
+                  >
+                    {size}
+                  </button>
+                ))}
+              {filter === 'Colors' &&
+                ['black', 'navy', 'yellow', 'grey', 'olive', 'pink', 'lavender', 'red'].map(color => (
+                  <button
+                    key={color}
+                    style={{ backgroundColor: color }}
+                    className={`block w-10 h-10 rounded-full mr-2 mb-2 ${
+                      localFilters.color === color ? 'ring-2 ring-black' : ''
+                    }`}
+                    onClick={() => handleSidebarFilterChange('color', color)}
+                  />
+                ))}
+              {filter === 'Tags' &&
+                ['Product', 'Bags', 'Shoes', 'Fashio', 'Clothing', 'Hats', 'Accessories'].map(tag => (
+                  <button
+                    key={tag}
+                    className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full mr-2 mb-2"
+                    onClick={() => handleSidebarFilterChange('tags', tag)}
+                  >
+                    {tag}
+                  </button>
+                ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+        {/* <ShopSidebar /> */}
       </div>
       <div className="w-3/4">
       <div className="flex justify-between items-center my-4">
         <div className="text-gray-500">
-          Showing {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, filteredProducts.length)} of {filteredProducts.length} results
+          {filteredAndSortedProducts.length > 0 ? (
+            `Showing ${indexOfFirstItem + 1}-${Math.min(indexOfLastItem, filteredAndSortedProducts.length)} of ${filteredAndSortedProducts.length} results`
+          ) : (
+            'No items available'
+          )}
         </div>
         <div className="flex items-center space-x-2 text-gray-500">
           <span>Sort by Price:</span>
@@ -70,15 +222,21 @@ const ShopPage: React.FC = () => {
             <img src={`/api/placeholder/${400}/${320}`} alt={product.name} className="mb-4" />
             {hoveredProduct === product.id && (
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleAddToCart(product, 1);
+                    }}>
                   <FaShoppingCart />
                 </button>
-                <button className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full">
+                <button className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full" onClick={() => handleAddToWishlist(product)}>
                   <FaHeart />
                 </button>
-                <button className="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-full">
-                  <FaEye />
-                </button>
+                <Link href={`/shop/${product.id}`}>
+                  <button className="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-full">
+                    <FaEye />
+                  </button>
+                </Link>
               </div>
             )}
             <h2 className="text-lg font-medium mb-2">{product.name}</h2>

@@ -16,6 +16,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
   const [currency, setCurrency] = useState('USD');
   const cartTotal = useSelector((state: RootState) => state.cart.total);
   const cartItems = useSelector((state: RootState) => state.cart.items);
+  const wishlistItems = useSelector((state: RootState) => state.wishlist.items);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -91,14 +92,15 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
               <ul className="flex space-x-8">
                 {[
                   { name: 'Home', href: '/' },
+                  { name: 'About Us', href: '/about' },
                   { name: 'Shop', href: '/shop' },
-                  { name: 'Pages', href: '#', dropdown: [
-                    { name: 'About Us', href: '/about' },
-                    { name: 'Shop Details', href: '/shop-details' },
-                    { name: 'Shopping Cart', href: '/cart' },
-                    { name: 'Check Out', href: '/checkout' },
-                    { name: 'Blog Details', href: '/blog-details' }
-                  ]},
+                  // { name: 'Pages', href: '#', dropdown: [
+                  //   { name: 'About Us', href: '/about' },
+                  //   { name: 'Shop Details', href: '/shop-details' },
+                  //   { name: 'Shopping Cart', href: '/cart' },
+                  //   { name: 'Check Out', href: '/checkout' },
+                  //   { name: 'Blog Details', href: '/blog-details' }
+                  // ]},
                   { name: 'Blog', href: '/blog' },
                   { name: 'Contacts', href: '/contact' }
                 ].map((item) => (
@@ -109,7 +111,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                     >
                       {item.name}
                     </Link>
-                    {item.dropdown && (
+                    {/* {item.dropdown && (
                       <ul className="absolute hidden group-hover:block left-0 bg-gray-900 w-48 py-2 mt-2 z-50">
                         {item.dropdown.map((dropItem) => (
                           <li key={dropItem.name}>
@@ -122,7 +124,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                           </li>
                         ))}
                       </ul>
-                    )}
+                    )} */}
                   </li>
                 ))}
               </ul>
@@ -133,8 +135,13 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
               <button className="hover:text-red-600">
                 <Search className="w-6 h-6" />
               </button>
-              <Link href="/wishlist" className="hover:text-red-600">
+              <Link href="/wishlist" className="relative hover:text-red-600">
                 <Heart className="w-6 h-6" />
+                {wishlistItems.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                    {wishlistItems.length}
+                  </span>
+                )}
               </Link>
               <div className="relative">
                 <Link href="/cart" className="hover:text-red-600">

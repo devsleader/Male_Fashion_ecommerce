@@ -7,7 +7,22 @@
     "brand": "Louis Vuitton",
     "color": "black",
     "size": "m",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "A stylish biker jacket with a modern fit.",
+    "additionalInfo": "Made from high-quality materials.",
+    "reviews": [
+      {
+        "id": 1,
+        "userName": "John Doe",
+        "rating": 5,
+        "comment": "Excellent jacket, very comfortable!",
+        "date": "2023-10-01"
+      }
+    ],
+    "images": ["/images/jacket1.jpg", "/images/jacket2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["black", "grey"],
+    "stock": 10
   },
   {
     "id": 2,
@@ -17,7 +32,22 @@
     "brand": "Chanel",
     "color": "grey",
     "size": "xl",
-    "rating": 3.8
+    "rating": 3.8,
+    "description": "A versatile chest bag with multiple pockets.",
+    "additionalInfo": "Perfect for travel and daily use.",
+    "reviews": [
+      {
+        "id": 2,
+        "userName": "Jane Smith",
+        "rating": 4,
+        "comment": "Very handy and stylish.",
+        "date": "2023-09-15"
+      }
+    ],
+    "images": ["/images/bag1.jpg", "/images/bag2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["grey", "black"],
+    "stock": 15
   },
   {
     "id": 3,
@@ -27,7 +57,22 @@
     "brand": "Zara",
     "color": "white",
     "size": "l",
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "A comfortable slim fit t-shirt.",
+    "additionalInfo": "Made from soft cotton.",
+    "reviews": [
+      {
+        "id": 3,
+        "userName": "Alice Brown",
+        "rating": 4,
+        "comment": "Great fit and quality.",
+        "date": "2023-08-20"
+      }
+    ],
+    "images": ["/images/tshirt1.jpg", "/images/tshirt2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["white", "black"],
+    "stock": 20
   },
   {
     "id": 4,
@@ -37,7 +82,22 @@
     "brand": "H&M",
     "color": "pink",
     "size": "s",
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "A beautiful floral print dress.",
+    "additionalInfo": "Perfect for summer outings.",
+    "reviews": [
+      {
+        "id": 4,
+        "userName": "Emily White",
+        "rating": 5,
+        "comment": "Absolutely love this dress!",
+        "date": "2023-07-10"
+      }
+    ],
+    "images": ["/images/dress1.jpg", "/images/dress2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["pink", "blue"],
+    "stock": 8
   },
   {
     "id": 5,
@@ -47,7 +107,22 @@
     "brand": "Coach",
     "color": "brown",
     "size": "one-size",
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "A durable leather backpack.",
+    "additionalInfo": "Spacious and stylish.",
+    "reviews": [
+      {
+        "id": 5,
+        "userName": "Michael Green",
+        "rating": 4,
+        "comment": "Great for daily use.",
+        "date": "2023-06-05"
+      }
+    ],
+    "images": ["/images/backpack1.jpg", "/images/backpack2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["brown", "black"],
+    "stock": 12
   },
   {
     "id": 6,
@@ -57,7 +132,22 @@
     "brand": "Adidas",
     "color": "grey",
     "size": "xl",
-    "rating": 4.1
+    "rating": 4.1,
+    "description": "A cozy oversized hoodie.",
+    "additionalInfo": "Perfect for casual wear.",
+    "reviews": [
+      {
+        "id": 6,
+        "userName": "Chris Blue",
+        "rating": 4,
+        "comment": "Very comfortable and warm.",
+        "date": "2023-05-15"
+      }
+    ],
+    "images": ["/images/hoodie1.jpg", "/images/hoodie2.jpg"],
+    "availableSizes": ["m", "l", "xl"],
+    "availableColors": ["grey", "black"],
+    "stock": 18
   },
   {
     "id": 7,
@@ -67,7 +157,22 @@
     "brand": "Mango",
     "color": "black",
     "size": "m",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "A chic pleated mini skirt.",
+    "additionalInfo": "Ideal for both casual and formal occasions.",
+    "reviews": [
+      {
+        "id": 7,
+        "userName": "Sophia Red",
+        "rating": 5,
+        "comment": "Looks amazing and fits well.",
+        "date": "2023-04-25"
+      }
+    ],
+    "images": ["/images/skirt1.jpg", "/images/skirt2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["black", "navy"],
+    "stock": 10
   },
   {
     "id": 8,
@@ -77,7 +182,22 @@
     "brand": "Ray-Ban",
     "color": "gold",
     "size": "one-size",
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "Classic aviator sunglasses.",
+    "additionalInfo": "UV protection lenses.",
+    "reviews": [
+      {
+        "id": 8,
+        "userName": "Liam Yellow",
+        "rating": 4,
+        "comment": "Stylish and protective.",
+        "date": "2023-03-30"
+      }
+    ],
+    "images": ["/images/sunglasses1.jpg", "/images/sunglasses2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["gold", "silver"],
+    "stock": 25
   },
   {
     "id": 9,
@@ -87,7 +207,22 @@
     "brand": "J.Crew",
     "color": "white",
     "size": "m",
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "A breathable linen shirt.",
+    "additionalInfo": "Perfect for warm weather.",
+    "reviews": [
+      {
+        "id": 9,
+        "userName": "Olivia Purple",
+        "rating": 4,
+        "comment": "Very comfortable and stylish.",
+        "date": "2023-02-20"
+      }
+    ],
+    "images": ["/images/shirt1.jpg", "/images/shirt2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["white", "blue"],
+    "stock": 14
   },
   {
     "id": 10,
@@ -97,7 +232,22 @@
     "brand": "Fossil",
     "color": "navy",
     "size": "one-size",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "A practical crossbody bag.",
+    "additionalInfo": "Ideal for everyday use.",
+    "reviews": [
+      {
+        "id": 10,
+        "userName": "Noah Orange",
+        "rating": 5,
+        "comment": "Very convenient and stylish.",
+        "date": "2023-01-15"
+      }
+    ],
+    "images": ["/images/messenger1.jpg", "/images/messenger2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["navy", "black"],
+    "stock": 20
   },
   {
     "id": 11,
@@ -107,7 +257,22 @@
     "brand": "Maje",
     "color": "olive",
     "size": "l",
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "A trendy sleeveless jumpsuit.",
+    "additionalInfo": "Perfect for summer outings.",
+    "reviews": [
+      {
+        "id": 11,
+        "userName": "Emma Green",
+        "rating": 4,
+        "comment": "Very stylish and comfortable.",
+        "date": "2022-12-10"
+      }
+    ],
+    "images": ["/images/jumpsuit1.jpg", "/images/jumpsuit2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["olive", "black"],
+    "stock": 9
   },
   {
     "id": 12,
@@ -117,7 +282,22 @@
     "brand": "Levi's",
     "color": "blue",
     "size": "m",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "A classic distressed denim jacket.",
+    "additionalInfo": "Timeless style and comfort.",
+    "reviews": [
+      {
+        "id": 12,
+        "userName": "James Blue",
+        "rating": 5,
+        "comment": "Great quality and fit.",
+        "date": "2022-11-05"
+      }
+    ],
+    "images": ["/images/denim1.jpg", "/images/denim2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["blue", "black"],
+    "stock": 11
   },
   {
     "id": 13,
@@ -127,7 +307,22 @@
     "brand": "Zara",
     "color": "black",
     "size": "s",
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "A luxurious satin camisole.",
+    "additionalInfo": "Perfect for layering.",
+    "reviews": [
+      {
+        "id": 13,
+        "userName": "Ava Pink",
+        "rating": 4,
+        "comment": "Very elegant and soft.",
+        "date": "2022-10-01"
+      }
+    ],
+    "images": ["/images/camisole1.jpg", "/images/camisole2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["black", "white"],
+    "stock": 16
   },
   {
     "id": 14,
@@ -137,7 +332,22 @@
     "brand": "Kate Spade",
     "color": "tan",
     "size": "one-size",
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "A spacious leather tote bag.",
+    "additionalInfo": "Perfect for work and travel.",
+    "reviews": [
+      {
+        "id": 14,
+        "userName": "Sophia Red",
+        "rating": 5,
+        "comment": "Very stylish and practical.",
+        "date": "2022-09-15"
+      }
+    ],
+    "images": ["/images/tote1.jpg", "/images/tote2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["tan", "black"],
+    "stock": 13
   },
   {
     "id": 15,
@@ -147,7 +357,22 @@
     "brand": "Ralph Lauren",
     "color": "blue",
     "size": "l",
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "A classic striped polo shirt.",
+    "additionalInfo": "Perfect for casual outings.",
+    "reviews": [
+      {
+        "id": 15,
+        "userName": "Liam Yellow",
+        "rating": 4,
+        "comment": "Great fit and quality.",
+        "date": "2022-08-10"
+      }
+    ],
+    "images": ["/images/polo1.jpg", "/images/polo2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["blue", "white"],
+    "stock": 17
   },
   {
     "id": 16,
@@ -157,7 +382,22 @@
     "brand": "Steve Madden",
     "color": "black",
     "size": "7",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Elegant ankle strap heels.",
+    "additionalInfo": "Perfect for formal occasions.",
+    "reviews": [
+      {
+        "id": 16,
+        "userName": "Emma Green",
+        "rating": 5,
+        "comment": "Very comfortable and stylish.",
+        "date": "2022-07-05"
+      }
+    ],
+    "images": ["/images/heels1.jpg", "/images/heels2.jpg"],
+    "availableSizes": ["6", "7", "8", "9"],
+    "availableColors": ["black", "red"],
+    "stock": 10
   },
   {
     "id": 17,
@@ -167,7 +407,22 @@
     "brand": "Madewell",
     "color": "natural",
     "size": "one-size",
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "A durable canvas tote bag.",
+    "additionalInfo": "Perfect for shopping and travel.",
+    "reviews": [
+      {
+        "id": 17,
+        "userName": "Noah Orange",
+        "rating": 4,
+        "comment": "Very practical and stylish.",
+        "date": "2022-06-01"
+      }
+    ],
+    "images": ["/images/canvas1.jpg", "/images/canvas2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["natural", "black"],
+    "stock": 22
   },
   {
     "id": 18,
@@ -177,7 +432,22 @@
     "brand": "Topshop",
     "color": "khaki",
     "size": "m",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Trendy cropped wide-leg pants.",
+    "additionalInfo": "Perfect for casual wear.",
+    "reviews": [
+      {
+        "id": 18,
+        "userName": "Olivia Purple",
+        "rating": 5,
+        "comment": "Very comfortable and stylish.",
+        "date": "2022-05-15"
+      }
+    ],
+    "images": ["/images/pants1.jpg", "/images/pants2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["khaki", "black"],
+    "stock": 14
   },
   {
     "id": 19,
@@ -187,7 +457,22 @@
     "brand": "Brooks Brothers",
     "color": "white",
     "size": "l",
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "A classic slim-fit Oxford shirt.",
+    "additionalInfo": "Perfect for formal occasions.",
+    "reviews": [
+      {
+        "id": 19,
+        "userName": "James Blue",
+        "rating": 4,
+        "comment": "Great quality and fit.",
+        "date": "2022-04-10"
+      }
+    ],
+    "images": ["/images/oxford1.jpg", "/images/oxford2.jpg"],
+    "availableSizes": ["s", "m", "l", "xl"],
+    "availableColors": ["white", "blue"],
+    "stock": 18
   },
   {
     "id": 20,
@@ -197,7 +482,22 @@
     "brand": "Anson Belt",
     "color": "brown",
     "size": "32",
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "A stylish leather belt.",
+    "additionalInfo": "Perfect for any outfit.",
+    "reviews": [
+      {
+        "id": 20,
+        "userName": "Ava Pink",
+        "rating": 4,
+        "comment": "Very stylish and durable.",
+        "date": "2022-03-05"
+      }
+    ],
+    "images": ["/images/belt1.jpg", "/images/belt2.jpg"],
+    "availableSizes": ["30", "32", "34", "36"],
+    "availableColors": ["brown", "black"],
+    "stock": 25
   },
   {
     "id": 21,
@@ -207,7 +507,22 @@
     "brand": "Everlane",
     "color": "camel",
     "size": "s",
-    "rating": 4.7
+    "rating": 4.7,
+    "description": "A luxurious cashmere sweater.",
+    "additionalInfo": "Perfect for cold weather.",
+    "reviews": [
+      {
+        "id": 21,
+        "userName": "Sophia Red",
+        "rating": 5,
+        "comment": "Very warm and soft.",
+        "date": "2022-02-01"
+      }
+    ],
+    "images": ["/images/sweater1.jpg", "/images/sweater2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["camel", "grey"],
+    "stock": 12
   },
   {
     "id": 22,
@@ -217,7 +532,22 @@
     "brand": "Vince",
     "color": "black",
     "size": "m",
-    "rating": 4.5
+    "rating": 4.5,
+    "description": "Elegant wide-leg trousers.",
+    "additionalInfo": "Perfect for formal occasions.",
+    "reviews": [
+      {
+        "id": 22,
+        "userName": "Liam Yellow",
+        "rating": 5,
+        "comment": "Very stylish and comfortable.",
+        "date": "2022-01-15"
+      }
+    ],
+    "images": ["/images/trousers1.jpg", "/images/trousers2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["black", "navy"],
+    "stock": 15
   },
   {
     "id": 23,
@@ -227,7 +557,22 @@
     "brand": "Converse",
     "color": "white",
     "size": "10",
-    "rating": 4.2
+    "rating": 4.2,
+    "description": "Classic canvas sneakers.",
+    "additionalInfo": "Perfect for casual wear.",
+    "reviews": [
+      {
+        "id": 23,
+        "userName": "Emma Green",
+        "rating": 4,
+        "comment": "Very comfortable and stylish.",
+        "date": "2021-12-10"
+      }
+    ],
+    "images": ["/images/sneakers1.jpg", "/images/sneakers2.jpg"],
+    "availableSizes": ["8", "9", "10", "11"],
+    "availableColors": ["white", "black"],
+    "stock": 20
   },
   {
     "id": 24,
@@ -237,7 +582,22 @@
     "brand": "Madewell",
     "color": "blue",
     "size": "l",
-    "rating": 4.4
+    "rating": 4.4,
+    "description": "A stylish denim midi skirt.",
+    "additionalInfo": "Perfect for casual outings.",
+    "reviews": [
+      {
+        "id": 24,
+        "userName": "Noah Orange",
+        "rating": 4,
+        "comment": "Very stylish and comfortable.",
+        "date": "2021-11-05"
+      }
+    ],
+    "images": ["/images/midi1.jpg", "/images/midi2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["blue", "black"],
+    "stock": 14
   },
   {
     "id": 25,
@@ -247,7 +607,22 @@
     "brand": "Fossil",
     "color": "black",
     "size": "one-size",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "A sleek leather trifold wallet.",
+    "additionalInfo": "Perfect for organizing essentials.",
+    "reviews": [
+      {
+        "id": 25,
+        "userName": "Olivia Purple",
+        "rating": 5,
+        "comment": "Very stylish and practical.",
+        "date": "2021-10-01"
+      }
+    ],
+    "images": ["/images/wallet1.jpg", "/images/wallet2.jpg"],
+    "availableSizes": ["one-size"],
+    "availableColors": ["black", "brown"],
+    "stock": 18
   },
   {
     "id": 26,
@@ -257,7 +632,22 @@
     "brand": "H&M",
     "color": "white",
     "size": "s",
-    "rating": 4.3
+    "rating": 4.3,
+    "description": "A comfortable ribbed cotton tank.",
+    "additionalInfo": "Perfect for layering.",
+    "reviews": [
+      {
+        "id": 26,
+        "userName": "James Blue",
+        "rating": 4,
+        "comment": "Very comfortable and soft.",
+        "date": "2021-09-15"
+      }
+    ],
+    "images": ["/images/tank1.jpg", "/images/tank2.jpg"],
+    "availableSizes": ["s", "m", "l"],
+    "availableColors": ["white", "black"],
+    "stock": 22
   },
   {
     "id": 27,
@@ -267,7 +657,22 @@
     "brand": "Timberland",
     "color": "tan",
     "size": "9",
-    "rating": 4.6
+    "rating": 4.6,
+    "description": "Stylish suede Chelsea boots.",
+    "additionalInfo": "Perfect for any occasion.",
+    "reviews": [
+      {
+        "id": 27,
+        "userName": "Ava Pink",
+        "rating": 5,
+        "comment": "Very stylish and comfortable.",
+        "date": "2021-08-10"
+      }
+    ],
+    "images": ["/images/boots1.jpg", "/images/boots2.jpg"],
+    "availableSizes": ["8", "9", "10"],
+    "availableColors": ["tan", "black"],
+    "stock": 15
   }
 ]
   
