@@ -137,12 +137,12 @@ const Footer = () => {
             Copyright © {new Date().getFullYear()} All rights reserved | This template is made with{' '}
             <span className="text-red-600">♥</span> by{' '}
             <a
-              href="https://colorlib.com"
+              href="https://mian-abu-obaida-portfolio.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-600 hover:text-red-500"
             >
-              Colorlib
+              Mian Abu Obaida
             </a>
           </p>
         </div>

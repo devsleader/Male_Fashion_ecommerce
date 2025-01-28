@@ -38,6 +38,7 @@ export interface Product {
   additionalInfo?: string;
   reviews?: ProductReview[];
   images?: string[];
+  img?: string;
   availableSizes?: string[];
   availableColors?: ColorOption[];
   stock?: number;

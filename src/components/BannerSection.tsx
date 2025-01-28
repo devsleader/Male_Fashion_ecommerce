@@ -20,7 +20,7 @@ const BannerSection = () => {
             transition={{ duration: 0.5 }}
             className="col-span-11 col-start-9"
           >
-            <div className="relative overflow-hidden group">
+            <div className="relative group">
               <div className="relative w-full">
                 <Image
                   src={bannerImg1}
@@ -28,7 +28,7 @@ const BannerSection = () => {
                   className="transition-transform duration-700 group-hover:scale-105 w-full aspect-4/3" 
                 />
               </div>
-              <div className="absolute left-8 top-1/2 -translate-y-1/2 max-w-[300px]">
+              <div className="absolute left-[-200px] top-1/2 -translate-y-1/2 max-w-[320px]">
                 <h2 className="text-4xl font-bold text-gray-900 leading-tight mb-4">
                   Clothing Collections 2030
                 </h2>
@@ -49,7 +49,7 @@ const BannerSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="col-span-7 col-start-1 row-start-2"
           >
-            <div className="relative overflow-hidden group mt-[-135px]">
+            <div className="relative group mt-[-135px]">
               <div className="relative w-full">
                 <Image
                   src={bannerImg2}
@@ -58,7 +58,7 @@ const BannerSection = () => {
                   
                 />
               </div>
-              <div className="absolute left-8 top-1/2 -translate-y-1/2 max-w-[300px]">
+              <div className="absolute left-8 bottom-[-100px] max-w-[320px]">
                 <h2 className="text-4xl font-bold text-gray-900 leading-tight ">
                   Accessories
                 </h2>
@@ -79,7 +79,7 @@ const BannerSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="col-span-12 col-start-10 row-start-2"
           >
-            <div className="relative overflow-hidden group">
+            <div className="relative group">
               <div className="relative w-full">
                 <Image
                   src={bannerImg3}
@@ -89,7 +89,7 @@ const BannerSection = () => {
                  
                 />
               </div>
-              <div className="absolute left-8 top-1/2 -translate-y-1/2 max-w-[300px]">
+              <div className="absolute left-[-130px] top-1/2 -translate-y-1/2 max-w-[300px]">
                 <h2 className="text-4xl font-bold text-gray-900 leading-tight mb-4">
                   Shoes Spring 2030
                 </h2>

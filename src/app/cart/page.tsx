@@ -60,7 +60,7 @@ const CartPage = () => {
                         <div className="flex items-center">
                           <div className="w-24 h-24 flex-shrink-0">
                             <img 
-                              src={`/api/placeholder/96/96`} 
+                              src={item.img || '/images/product/product-1.jpg'}
                               alt={item.name}
                               className="w-full h-full object-cover"
                             />

@@ -72,19 +72,19 @@ const ProductDetails = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Product Images */}
-          <div className="bg-gray-100 p-8">
+          <div className="bg-gray-100">
             <div className="aspect-w-1 aspect-h-1">
               <img 
-                src={`/api/placeholder/600/600`}
+                src={product.img || '/images/product/product-1.jpg'}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="grid grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-4 gap-4 mt-4 p-4">
               {[1, 2, 3, 4].map((_, index) => (
                 <div key={index} className="aspect-w-1 aspect-h-1 bg-white">
                   <img 
-                    src={`/api/placeholder/150/150`}
+                    src='/images/product/product-1.jpg'
                     alt={`${product.name} thumbnail ${index + 1}`}
                     className="w-full h-full object-cover cursor-pointer hover:opacity-75"
                   />
@@ -416,15 +416,17 @@ const ProductDetails = () => {
               .map(relatedProduct => (
                 <div key={relatedProduct.id} className="group">
                   <Link href={`/shop/${relatedProduct.id}`}>
-                    <div className="relative overflow-hidden mb-4">
+                    <div className="relative overflow-hidden">
                       <img
-                        src={`/api/placeholder/300/300`}
+                        src={relatedProduct.images && relatedProduct.images.length > 0 ? relatedProduct.images[0] : '/path/to/default/image.jpg'}
                         alt={relatedProduct.name}
                         className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
+                    <div className='border p-4'>
                     <h3 className="text-lg font-medium mb-2">{relatedProduct.name}</h3>
                     <p className="text-gray-600">${relatedProduct.price.toFixed(2)}</p>
+                    </div>
                   </Link>
                 </div>
               ))}

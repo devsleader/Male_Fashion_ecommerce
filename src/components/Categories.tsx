@@ -20,6 +20,7 @@ const Categories: React.FC = () => {
 
   useEffect(() => {
     const targetDate = new Date(currentCategory.endTime);
+    setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const interval = setInterval(() => {
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
@@ -38,7 +39,7 @@ const Categories: React.FC = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [currentCategory.endTime]);
+  }, [currentCategory.endTime, activeCategory]);
 
   const handleCategoryClick = (index: number) => {
     dispatch(setActiveCategory(index));

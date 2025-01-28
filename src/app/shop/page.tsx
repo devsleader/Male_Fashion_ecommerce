@@ -11,8 +11,19 @@ import Link from 'next/link';
 import { setFilters, setSearchTerm } from '@/store/productSlice';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Product } from '@/types/types';
-
+import Breadcrumb from '@/components/Breadcrumb';
   
+// Define a type for the filter keys
+type FilterType = 'category' | 'brand' | 'size' | 'color' | 'priceRange' | 'tags';
+
+interface LocalFilters {
+  category: string;
+  brand: string;
+  size: string;
+  color: string;
+  priceRange: { min: number; max: number };
+  tags: string;
+}
 
 const ShopPage: React.FC = () => {
   const filteredProducts = useSelector((state: RootState) => state.products.filteredProducts);
@@ -47,18 +58,33 @@ const ShopPage: React.FC = () => {
 
 
   const dispatch = useDispatch();
-  const [localFilters, setLocalFilters] = useState({
+  const [localFilters, setLocalFilters] = useState<LocalFilters>({
     category: '',
     brand: '',
     size: '',
     color: '',
-    priceRange: { min: 0, max: 250 }
+    priceRange: { min: 0, max: 250 },
+    tags: ''
   });
   const [search, setSearch] = useState('');
   const [expandedFilter, setExpandedFilter] = useState<string | null>('Categories');
 
-  const handleSidebarFilterChange = (filterType: string, value: any) => {
-    const newFilters = { ...localFilters, [filterType]: value };
+  const handleSidebarFilterChange = (filterType: FilterType, value: any) => {
+    const newFilters = { ...localFilters };
+
+    // Check if the filter is already applied
+    if (filterType === 'priceRange') {
+      // If the price range is already set to the selected range, reset it
+      if (newFilters.priceRange.min === value.min && newFilters.priceRange.max === value.max) {
+        newFilters.priceRange = { min: 0, max: 250 }; // Reset to default
+      } else {
+        newFilters.priceRange = value; // Apply new price range
+      }
+    } else {
+      // For other filter types, toggle the filter
+      newFilters[filterType] = newFilters[filterType] === value ? '' : value;
+    }
+
     setLocalFilters(newFilters);
     dispatch(setFilters(newFilters));
   };
@@ -80,7 +106,10 @@ const ShopPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto flex">
+    
+    <div className="">
+      <Breadcrumb pageTitle="Shop" currentPage="shop" />
+      <div className='container flex'>
       <div className="w-1/4">
       <div className="shop__sidebar bg-white p-4">
       {/* Search Form */}
@@ -215,31 +244,40 @@ const ShopPage: React.FC = () => {
         {currentProducts.map(product => (
           <div
             key={product.id}
-            className="border p-4 relative group"
+            className="relative group overflow-hidden"
             onMouseEnter={() => setHoveredProduct(product.id)}
             onMouseLeave={() => setHoveredProduct(null)}
           >
-            <img src={`/api/placeholder/${400}/${320}`} alt={product.name} className="mb-4" />
+            <img 
+              src={product.images && product.images.length > 0 ? product.images[0] : '/path/to/default/image.jpg'}  
+              alt={product.name} 
+              className="w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+            />
             {hoveredProduct === product.id && (
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full"
+              <div className="absolute top-4 right-1 flex flex-col gap-2">
+                <button className="bg-white hover:bg-black hover:text-white transition-colors p-2 shadow-md"
                     onClick={(e) => {
                       e.preventDefault();
                       handleAddToCart(product, 1);
                     }}>
                   <FaShoppingCart />
                 </button>
-                <button className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full" onClick={() => handleAddToWishlist(product)}>
+                <button className="bg-white hover:bg-black hover:text-white transition-colors p-2 shadow-md" onClick={() => handleAddToWishlist(product)}>
                   <FaHeart />
                 </button>
                 <Link href={`/shop/${product.id}`}>
-                  <button className="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-full">
+                  <button className="bg-white hover:bg-black hover:text-white transition-colors p-2 shadow-md">
                     <FaEye />
                   </button>
                 </Link>
               </div>
             )}
-            <h2 className="text-lg font-medium mb-2">{product.name}</h2>
+            <div className='border p-4'>
+            <Link href={`/shop/${product.id}`}>
+                <h3 className="text-lg font-medium mb-2 hover:text-gray-600 transition-colors">
+                  {product.name}
+                </h3>
+              </Link>
             <div className="flex items-center mb-4">
               {[1, 2, 3, 4, 5].map((star, index) => (
                 <svg
@@ -257,6 +295,7 @@ const ShopPage: React.FC = () => {
               <span className="ml-2 text-gray-500">({product.rating})</span>
             </div>
             <p className="text-gray-600 mb-4">${product.price.toFixed(2)}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -265,7 +304,7 @@ const ShopPage: React.FC = () => {
           {[...Array(totalPages)].map((_, index) => (
             <button
               key={index}
-              className={`px-2 py-1 rounded ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+              className={`px-3 py-1 rounded-full ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-transparent border hover:bg-blue-300'}`}
               onClick={() => setCurrentPage(index + 1)}
             >
               {index + 1}
@@ -273,6 +312,7 @@ const ShopPage: React.FC = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
     </div>
   );

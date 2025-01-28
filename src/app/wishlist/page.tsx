@@ -18,7 +18,7 @@ const WishlistPage = () => {
 
   const handleAddToCart = (product: any) => {
     dispatch(addToCart({ ...product, quantity: 1 }));
-  
+    handleRemoveFromWishlist(product.id);
   };
 
   return (
@@ -52,7 +52,7 @@ const WishlistPage = () => {
                   <td className="px-6 py-4">
                     <div className="flex items-center">
                       <img 
-                        src={`/api/placeholder/100/100`}
+                        src={item.img || '/images/product/product-1.jpg'}
                         alt={item.name}
                         className="w-16 h-16 object-cover mr-4"
                       />
