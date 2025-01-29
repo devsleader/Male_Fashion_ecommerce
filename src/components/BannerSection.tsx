@@ -10,7 +10,8 @@ import bannerImg3 from '@/img/banner/banner-3.jpg'
 
 const BannerSection = () => {
   return (
-    <section className="py-24 hidden md:inline">
+    <section className="hidden md:inline">
+      <div className='py-24'>
       <div className="container">
         <div className="grid grid-cols-12 gap-8">
           <motion.div
@@ -103,6 +104,7 @@ const BannerSection = () => {
             </div>
           </motion.div>
         </div>
+      </div>
       </div>
     </section>
   );
