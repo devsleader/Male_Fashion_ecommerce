@@ -168,12 +168,19 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         {isMobileMenuOpen && (
           <div className="fixed top-0 right-0 w-64 h-full bg-white z-50 shadow-xl transform transition-transform duration-300 ease-in-out">
             <div className="p-4">
+              {/* Close Button */}
+              <button 
+                className="absolute top-4 right-4 text-black"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                &times; {/* This represents the close (X) icon */}
+              </button>
               <nav className="mt-8">
                 <ul className="space-y-4">
                   {[
                     { name: 'Home', href: '/' },
+                    { name: 'About Us', href: '/about' },
                     { name: 'Shop', href: '/shop' },
-                    { name: 'Pages', href: '#' },
                     { name: 'Blog', href: '/blog' },
                     { name: 'Contacts', href: '/contact' }
                   ].map((item) => (

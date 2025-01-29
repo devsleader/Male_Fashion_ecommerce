@@ -42,11 +42,11 @@ const BlogDetailsSection: React.FC<BlogDetailsSectionProps> = ({ blog }) => {
             </div>
           )}
         </div>
-        <div className='flex w-full'>
-          <div className="w-[15%] text-center px-4">
+        <div className='flex w-full md:flex-row flex-col'>
+          <div className="w-full md:w-[15%] text-center px-4">
             <SocialShareLinks />
           </div>
-          <div className="w-[85%] px-4">
+          <div className="w-full md:w-[85%] px-4">
                 {blog.content.map((paragraph, index) => (
                 <p key={index} className="mb-6 text-lg leading-relaxed">
                   {paragraph}

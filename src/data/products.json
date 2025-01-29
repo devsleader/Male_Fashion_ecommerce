@@ -21,7 +21,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["black", "grey"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "grey", "class": "bg-grey" }
+    ],
     "stock": 10
   },
   {
@@ -46,7 +49,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["grey", "black"],
+    "availableColors": [
+      { "name": "grey", "class": "bg-grey" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 15
   },
   {
@@ -71,7 +77,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["white", "black"],
+    "availableColors": [
+      { "name": "white", "class": "bg-white" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 20
   },
   {
@@ -96,7 +105,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["pink", "blue"],
+    "availableColors": [
+      { "name": "pink", "class": "bg-pink" },
+      { "name": "blue", "class": "bg-blue" }
+    ],
     "stock": 8
   },
   {
@@ -121,7 +133,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["brown", "black"],
+    "availableColors": [
+      { "name": "brown", "class": "bg-brown" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 12
   },
   {
@@ -146,7 +161,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["m", "l", "xl"],
-    "availableColors": ["grey", "black"],
+    "availableColors": [
+      { "name": "grey", "class": "bg-grey" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 18
   },
   {
@@ -171,7 +189,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["black", "navy"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "navy", "class": "bg-navy" }
+    ],
     "stock": 10
   },
   {
@@ -196,7 +217,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["gold", "silver"],
+    "availableColors": [
+      { "name": "gold", "class": "bg-gold" },
+      { "name": "silver", "class": "bg-silver" }
+    ],
     "stock": 25
   },
   {
@@ -221,7 +245,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["white", "blue"],
+    "availableColors": [
+      { "name": "white", "class": "bg-white" },
+      { "name": "blue", "class": "bg-blue" }
+    ],
     "stock": 14
   },
   {
@@ -246,7 +273,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["navy", "black"],
+    "availableColors": [
+      { "name": "navy", "class": "bg-navy" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 20
   },
   {
@@ -271,7 +301,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["olive", "black"],
+    "availableColors": [
+      { "name": "olive", "class": "bg-olive" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 9
   },
   {
@@ -296,7 +329,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["blue", "black"],
+    "availableColors": [
+      { "name": "blue", "class": "bg-blue" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 11
   },
   {
@@ -321,7 +357,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["black", "white"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "white", "class": "bg-white" }
+    ],
     "stock": 16
   },
   {
@@ -346,7 +385,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["tan", "black"],
+    "availableColors": [
+      { "name": "tan", "class": "bg-yellow-700" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 13
   },
   {
@@ -371,7 +413,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["blue", "white"],
+    "availableColors": [
+      { "name": "blue", "class": "bg-blue" },
+      { "name": "white", "class": "bg-white" }
+    ],
     "stock": 17
   },
   {
@@ -396,7 +441,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["6", "7", "8", "9"],
-    "availableColors": ["black", "red"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "red", "class": "bg-red" }
+    ],
     "stock": 10
   },
   {
@@ -421,7 +469,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["natural", "black"],
+    "availableColors": [
+      { "name": "natural", "class": "bg-natural" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 22
   },
   {
@@ -446,7 +497,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["khaki", "black"],
+    "availableColors": [
+      { "name": "khaki", "class": "bg-khaki" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 14
   },
   {
@@ -471,7 +525,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l", "xl"],
-    "availableColors": ["white", "blue"],
+    "availableColors": [
+      { "name": "white", "class": "bg-white" },
+      { "name": "blue", "class": "bg-blue" }
+    ],
     "stock": 18
   },
   {
@@ -496,7 +553,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["30", "32", "34", "36"],
-    "availableColors": ["brown", "black"],
+    "availableColors": [
+      { "name": "brown", "class": "bg-brown" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 25
   },
   {
@@ -521,7 +581,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["camel", "grey"],
+    "availableColors": [
+      { "name": "camel", "class": "bg-camel" },
+      { "name": "grey", "class": "bg-grey" }
+    ],
     "stock": 12
   },
   {
@@ -546,7 +609,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["black", "navy"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "navy", "class": "bg-navy" }
+    ],
     "stock": 15
   },
   {
@@ -571,7 +637,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["8", "9", "10", "11"],
-    "availableColors": ["white", "black"],
+    "availableColors": [
+      { "name": "white", "class": "bg-white" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 20
   },
   {
@@ -596,7 +665,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["blue", "black"],
+    "availableColors": [
+      { "name": "blue", "class": "bg-blue" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 14
   },
   {
@@ -621,7 +693,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["one-size"],
-    "availableColors": ["black", "brown"],
+    "availableColors": [
+      { "name": "black", "class": "bg-black" },
+      { "name": "brown", "class": "bg-brown" }
+    ],
     "stock": 18
   },
   {
@@ -646,7 +721,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["s", "m", "l"],
-    "availableColors": ["white", "black"],
+    "availableColors": [
+      { "name": "white", "class": "bg-white" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 22
   },
   {
@@ -671,7 +749,10 @@
     ],
     "images": ["/images/product/product-1.jpg", "/images/product/product-1.jpg"],
     "availableSizes": ["8", "9", "10"],
-    "availableColors": ["tan", "black"],
+    "availableColors": [
+      { "name": "tan", "class": "bg-yellow-700" },
+      { "name": "black", "class": "bg-black" }
+    ],
     "stock": 15
   }
 ]

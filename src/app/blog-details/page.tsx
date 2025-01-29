@@ -8,7 +8,7 @@ import { fetchBlogById } from '@/store/blogActions';
 
 const BlogDetail: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
-  const currentBlog = useSelector((state: RootState) => state.blog.currentBlog);
+  const currentBlog = useSelector((state: RootState) => state.blogs.currentBlog);
   useEffect(() => {
     dispatch(fetchBlogById(1));
   }, [dispatch]);

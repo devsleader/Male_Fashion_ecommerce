@@ -134,16 +134,17 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 py-6 border-t border-gray-800">
           <p className="text-center text-gray-400">
-            Copyright © {new Date().getFullYear()} All rights reserved | This template is made with{' '}
+            Copyright © {new Date().getFullYear()} All rights reserved 
+            {/* | This template is made with{' '}
             <span className="text-red-600">♥</span> by{' '}
             <a
-              href="https://mian-abu-obaida-portfolio.vercel.app/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-600 hover:text-red-500"
             >
-              Mian Abu Obaida
-            </a>
+              Dev
+            </a> */}
           </p>
         </div>
       </div>

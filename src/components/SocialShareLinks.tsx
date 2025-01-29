@@ -47,7 +47,7 @@ const SocialShareLinks: React.FC<SocialShareProps> = ({
       <span className="text-gray-900 text-xl uppercase font-bold block mb-8">
         Share
       </span>
-      <ul className="space-y-4 flex-col">
+      <ul className=" flex flex-row md:flex-col gap-8 justify-center">
         {socialPlatforms.map((platform) => (
           <li key={platform.name}>
             <button 

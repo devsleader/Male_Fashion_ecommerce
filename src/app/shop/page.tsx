@@ -109,8 +109,8 @@ const ShopPage: React.FC = () => {
     
     <div className="">
       <Breadcrumb pageTitle="Shop" currentPage="shop" />
-      <div className='container flex'>
-      <div className="w-1/4">
+      <div className='container flex flex-col md:flex-row'>
+      <div className="w-full md:w-1/4">
       <div className="shop__sidebar bg-white p-4">
       {/* Search Form */}
       <form onSubmit={handleSearchSubmit} className="mb-8">
@@ -217,7 +217,7 @@ const ShopPage: React.FC = () => {
     </div>
         {/* <ShopSidebar /> */}
       </div>
-      <div className="w-3/4">
+      <div className="w-full md:w-3/4">
       <div className="flex justify-between items-center my-4">
         <div className="text-gray-500">
           {filteredAndSortedProducts.length > 0 ? (
@@ -240,11 +240,11 @@ const ShopPage: React.FC = () => {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {currentProducts.map(product => (
           <div
             key={product.id}
-            className="relative group overflow-hidden"
+            className="relative group overflow-hidden w-full"
             onMouseEnter={() => setHoveredProduct(product.id)}
             onMouseLeave={() => setHoveredProduct(null)}
           >

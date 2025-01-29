@@ -5,6 +5,7 @@ import { RootState } from '@/store/store';
 import { removeFromCart, updateQuantity } from '@/store/cartSlice';
 import Link from 'next/link';
 import { FaTimes } from 'react-icons/fa';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const CartPage = () => {
   const cart = useSelector((state: RootState) => state.cart);
@@ -57,7 +58,7 @@ const CartPage = () => {
                   {cart.items.map((item) => (
                     <tr key={item.id} className="border-b border-gray-200">
                       <td className="py-8">
-                        <div className="flex items-center">
+                        <div className="flex flex-col md:flex-row items-center">
                           <div className="w-24 h-24 flex-shrink-0">
                             <img 
                               src={item.img || '/images/product/product-1.jpg'}
@@ -113,11 +114,11 @@ const CartPage = () => {
                 </tbody>
               </table>
             </div>
-            <div className="flex justify-between mt-8">
+            <div className="flex flex-col md:flex-row justify-between mt-8 gap-8">
               <Link href="/shop" className="px-8 py-3 border border-gray-300 font-bold uppercase tracking-wider hover:bg-gray-100">
                 Continue Shopping
               </Link>
-              <button className="px-8 py-3 border border-gray-300 font-bold uppercase tracking-wider hover:bg-gray-100">
+              <button className="px-8 py-3 border border-gray-300 bg-black text-white font-bold uppercase tracking-wider">
                 Update cart
               </button>
             </div>

@@ -36,66 +36,68 @@ const WishlistPage = () => {
         </div>
       ) : (
         <div className="bg-white rounded-lg shadow">
-          <table className="w-full">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="px-6 py-4 text-left">PRODUCT</th>
-                <th className="px-6 py-4 text-left">PRICE</th>
-                <th className="px-6 py-4 text-left">STOCK STATUS</th>
-                <th className="px-6 py-4 text-left">ACTIONS</th>
-                <th className="px-6 py-4 text-left"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {wishlistItems.map((item) => (
-                <tr key={item.id} className="border-t">
-                  <td className="px-6 py-4">
-                    <div className="flex items-center">
-                      <img 
-                        src={item.img || '/images/product/product-1.jpg'}
-                        alt={item.name}
-                        className="w-16 h-16 object-cover mr-4"
-                      />
-                      <div>
-                        <h3 className="font-medium">{item.name}</h3>
-                        <p className="text-sm text-gray-500">{item.category}</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="font-medium">${item.price.toFixed(2)}</span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`text-sm ${item.stock && item.stock > 0 ? 'text-green-600' : 'text-red-600'}`}>
-                      {item.stock && item.stock > 0 ? 'In Stock' : 'Out of Stock'}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    <button
-                      onClick={() => handleAddToCart(item)}
-                      disabled={item.stock === undefined || item.stock === 0}
-                      className={`flex items-center px-4 py-2 rounded ${
-                        item.stock && item.stock > 0 
-                          ? 'bg-black text-white hover:bg-gray-800' 
-                          : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      }`}
-                    >
-                      <FaShoppingCart className="mr-2" />
-                      ADD TO CART
-                    </button>
-                  </td>
-                  <td className="px-6 py-4">
-                    <button
-                      onClick={() => handleRemoveFromWishlist(item.id)}
-                      className="text-gray-500 hover:text-red-500"
-                    >
-                      <FaTrash />
-                    </button>
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-6 py-4 text-left">PRODUCT</th>
+                  <th className="px-6 py-4 text-left">PRICE</th>
+                  <th className="px-6 py-4 text-left">STOCK STATUS</th>
+                  <th className="px-6 py-4 text-left">ACTIONS</th>
+                  <th className="px-6 py-4 text-left"></th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {wishlistItems.map((item) => (
+                  <tr key={item.id} className="border-t">
+                    <td className="px-6 py-4">
+                      <div className="flex flex-col md:flex-row items-center">
+                        <img 
+                          src={item.img || '/images/product/product-1.jpg'}
+                          alt={item.name}
+                          className="w-16 h-16 object-cover mr-4"
+                        />
+                        <div>
+                          <h3 className="font-medium">{item.name}</h3>
+                          <p className="text-sm text-gray-500">{item.category}</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className="font-medium">${item.price.toFixed(2)}</span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`text-sm ${item.stock && item.stock > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                        {item.stock && item.stock > 0 ? 'In Stock' : 'Out of Stock'}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <button
+                        onClick={() => handleAddToCart(item)}
+                        disabled={item.stock === undefined || item.stock === 0}
+                        className={`flex items-center px-4 py-2 rounded ${
+                          item.stock && item.stock > 0 
+                            ? 'bg-black text-white hover:bg-gray-800' 
+                            : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                        }`}
+                      >
+                        <FaShoppingCart className="mr-2" />
+                        <span className="hidden md:inline">ADD TO CART</span>
+                      </button>
+                    </td>
+                    <td className="px-6 py-4">
+                      <button
+                        onClick={() => handleRemoveFromWishlist(item.id)}
+                        className="text-gray-500 hover:text-red-500"
+                      >
+                        <FaTrash />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
     </div>

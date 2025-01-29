@@ -15,13 +15,14 @@ const BlogNavigationButtons: React.FC<BlogNavigationButtonsProps> = ({
   nextBlogTitle
 }) => {
   return (
-    <div className="flex justify-between mt-8">
+    <div className="flex justify-between my-8 gap-4">
       {previousBlogId ? (
         <Link 
           href={`/blog/${previousBlogId}`} 
           className="btn bg-[#f0f0f0] px-4 py-2 rounded-lg hover:bg-[#e0e0e0] transition-colors"
-        >
-          Previous: {previousBlogTitle}
+        > 
+        Previous
+          <span className="hidden md:inline"> : {previousBlogTitle}</span>
         </Link>
       ) : (
         <div className="text-gray-400">No Previous Post</div>
@@ -32,7 +33,8 @@ const BlogNavigationButtons: React.FC<BlogNavigationButtonsProps> = ({
           href={`/blog/${nextBlogId}`} 
           className="btn bg-[#f0f0f0] px-4 py-2 rounded-lg hover:bg-[#e0e0e0] transition-colors"
         >
-          Next: {nextBlogTitle}
+          Next
+          <span className="hidden md:inline"> : {nextBlogTitle}</span>
         </Link>
       ) : (
         <div className="text-gray-400">No Next Post</div>
