@@ -49,7 +49,7 @@ const Counter = () => {
   return (
     <section className="py-20 border-b border-gray-200">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {counters.map((counter, index) => (
             <CounterItem 
               key={index}
